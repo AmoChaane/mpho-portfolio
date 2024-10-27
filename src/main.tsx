@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, createHashRouter, HashRouter, Route, RouterProvider, Routes } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import NavBar from './modules/core/nav/navbar.tsx';
@@ -46,7 +46,10 @@ const router = createHashRouter([
     path:'/videos',
     element: <HomePage />
   },
-])
+],
+  {
+    basename: "/"
+  })
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
