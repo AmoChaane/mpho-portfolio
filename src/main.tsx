@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import NavBar from './modules/core/nav/navbar.tsx';
@@ -10,7 +10,7 @@ import ProjectAll from './modules/projects/components/projectsAll.tsx';
 import ProjectView from './modules/projects/components/projectView.tsx';
 import AboutMain from './modules/about/components/aboutMain.tsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { 
     path: '/', 
     element: <HomePage/>,
