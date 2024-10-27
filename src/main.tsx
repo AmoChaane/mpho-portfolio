@@ -12,7 +12,7 @@ import AboutMain from './modules/about/components/aboutMain.tsx'
 
 const router = createHashRouter([
   { 
-    path: '/', 
+    path: '/mpho-portfolio', 
     element: <HomePage/>,
     errorElement: <div><p>404 NOT FOUND</p></div>
   },
