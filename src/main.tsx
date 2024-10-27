@@ -48,7 +48,7 @@ const router = createHashRouter([
   },
 ],
   {
-    basename: "/"
+    basename: "/mpho-portfolio"
   })
 
 createRoot(document.getElementById('root')!).render(
