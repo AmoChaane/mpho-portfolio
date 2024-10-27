@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, HashRouter, Route, RouterProvider, Routes } from 'react-router-dom';
 import './index.css';
 
 import NavBar from './modules/core/nav/navbar.tsx';
@@ -52,16 +52,18 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <NavBar />
     
-    {/*<BrowserRouter>
+    {/* <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/games" element={<HomePage/>}/>
-        <Route path="/about" element={<HomePage/>}/>
-        <Route path="/projects" element={<HomePage/>}/>
+        <Route path="/about" element={<AboutMain/>}/>
+        <Route path="/projects" element={<ProjectMain/>}/>
         <Route path="/videos" element={<HomePage/>}/>
         <Route path="/blogs" element={<HomePage/>}/>
       </Routes>
-    </BrowserRouter>*/}
+    </HashRouter>,
+    root */}
     <RouterProvider router={router}/>
   </StrictMode>,
 )
+
